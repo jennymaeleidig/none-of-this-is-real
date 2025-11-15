@@ -7,7 +7,8 @@ SUPPORT THE ARTIST AND PURCHASE THE TUNES HERE - https://djrozwell.bandcamp.com/
 Instructions:
 ```
 Greetings, mortal. Thou hast stumbled upon a mysterious adventure of wonder and art magic. This journey will be different each time thou listen
-To listen to this whole album properly, thou must play on shuffle mode in thy media player of choice with a crossfade of five or six seconds between tracks, or thou shalt be smited```
+To listen to this whole album properly, thou must play on shuffle mode in thy media player of choice with a crossfade of five or six seconds between tracks, or thou shalt be smited
+```
 
 ## DISCLAIMER:
 
