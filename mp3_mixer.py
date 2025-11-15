@@ -12,7 +12,7 @@ from pathlib import Path
 from pydub import AudioSegment
 
 
-def find_mp3_files(directory):
+def find_mp3_files_shuffled(directory):
     """
     Recursively find all MP3 files in the given directory.
     
@@ -20,7 +20,7 @@ def find_mp3_files(directory):
         directory (str): Path to the directory to search
         
     Returns:
-        list: List of paths to MP3 files
+        list: Shuffled ist of paths to MP3 files
     """
     mp3_files = []
     directory_path = Path(directory)
@@ -32,8 +32,7 @@ def find_mp3_files(directory):
     for file_path in directory_path.rglob("*.mp3"):
         mp3_files.append(str(file_path))
     
-    return mp3_files
-
+    return random.sample(mp3_files, len(mp3_files))
 
 def create_random_mix(mp3_files, target_length_minutes, output_file, crossfade_duration=5500):
     """
@@ -62,7 +61,7 @@ def create_random_mix(mp3_files, target_length_minutes, output_file, crossfade_d
     
     while current_length_ms < target_length_ms:
         # Randomly select a track
-        selected_file = random.choice(mp3_files)
+        selected_file = mp3_files[track_count]
         track_name = os.path.basename(selected_file)
         
         try:
@@ -158,7 +157,7 @@ Examples:
     parser.add_argument(
         "--crossfade",
         type=int,
-        default=5500,
+        default=random.choice([5000, 6000]),
         help="Crossfade duration in milliseconds (default: 5500ms)"
     )
     
@@ -171,7 +170,7 @@ Examples:
     try:
         # Find all MP3 files
         print(f"\nSearching for MP3 files in: {args.tracks}")
-        mp3_files = find_mp3_files(args.tracks)
+        mp3_files = find_mp3_files_shuffled(args.tracks)
         
         if not mp3_files:
             print(f"\n✗ No MP3 files found in '{args.tracks}'")

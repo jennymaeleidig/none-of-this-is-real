@@ -85,17 +85,17 @@ pipenv run python mp3_mixer.py --length 60 --crossfade 3000
 ### Complete Example
 
 ```bash
-pipenv run python mp3_mixer.py --length 90 --output "road_trip_mix.mp3" --tracks ./tracks --crossfade 5500
+pipenv run python mp3_mixer.py --length 90 --output "road_trip_mix.mp3" --tracks ./tracks --crossfade 5000
 ```
 
 ## Command-Line Options
 
-| Option        | Required | Default          | Description                                       |
-| ------------- | -------- | ---------------- | ------------------------------------------------- |
-| `--length`    | Yes      | -                | Target length of the final mix in minutes         |
-| `--output`    | No       | `random_mix.mp3` | Output filename for the generated mix             |
-| `--tracks`    | No       | `tracks`         | Directory containing MP3 files to mix             |
-| `--crossfade` | No       | `5500`           | Crossfade duration between tracks in milliseconds |
+| Option        | Required | Default                 | Description                                       |
+| ------------- | -------- | ----------------------- | ------------------------------------------------- |
+| `--length`    | Yes      | -                       | Target length of the final mix in minutes         |
+| `--output`    | No       | `random_mix.mp3`        | Output filename for the generated mix             |
+| `--tracks`    | No       | `tracks`                | Directory containing MP3 files to mix             |
+| `--crossfade` | No       | `5000 or 6000 (random)` | Crossfade duration between tracks in milliseconds |
 
 ## Project Structure
 

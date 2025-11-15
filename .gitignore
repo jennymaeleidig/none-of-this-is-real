@@ -4,3 +4,7 @@
 *.gz
 *.7z
 .tool-versions
+
+.DS_Store
+
+*.mp3
