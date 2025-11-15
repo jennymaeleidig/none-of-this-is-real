@@ -2,6 +2,8 @@
 
 A Python script that randomly selects and concatenates MP3 files from an album directory into a single output file of a specified duration. Used for creating randomized mixes of a preset length for use on the radio or other streaming platforms.
 
+SUPPORT THE ARTIST AND PURCHASE THE TUNES HERE - https://djrozwell.bandcamp.com/album/none-of-this-is-real
+
 ## DISCLAIMER:
 
 This script is AI generated and may require adjustments to fit your specific needs. Use at your own discretion.
