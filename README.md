@@ -4,6 +4,11 @@ A Python script that randomly selects and concatenates MP3 files from an album d
 
 SUPPORT THE ARTIST AND PURCHASE THE TUNES HERE - https://djrozwell.bandcamp.com/album/none-of-this-is-real
 
+Instructions:
+```
+Greetings, mortal. Thou hast stumbled upon a mysterious adventure of wonder and art magic. This journey will be different each time thou listen
+To listen to this whole album properly, thou must play on shuffle mode in thy media player of choice with a crossfade of five or six seconds between tracks, or thou shalt be smited```
+
 ## DISCLAIMER:
 
 This script is AI generated and may require adjustments to fit your specific needs. Use at your own discretion.
